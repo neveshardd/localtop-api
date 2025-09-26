@@ -7,7 +7,7 @@ import logger from "./libs/pino";
 
 const server = fastify()
 server.register(cors, {
-    origin: ['http://localhost:3000'],
+    origin: ['http://localhost:3000', 'https://localtop.vercel.app'],
     credentials: true,
     methods: ['GET', 'POST']
 })
