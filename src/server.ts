@@ -26,4 +26,5 @@ server.listen({ port: PORT, host: HOST }, (err, address) => {
     }
 
     logger.info(`Server running on http://localhost:${PORT}`)
+    logger.info(`Server running on ${address}`)
 })
